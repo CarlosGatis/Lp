@@ -84,7 +84,7 @@ section[id]{scroll-margin-top:110px;}
   font-size:28px;
   line-height:1;
   cursor:pointer;
-  user-select:none;
+  /* user-select:none; */
 }
 .menu-trigger:hover{color:var(--teal-600);}
 .menu-trigger:focus{outline:3px solid rgba(44,127,146,.35);outline-offset:2px;}
@@ -131,11 +131,11 @@ section[id]{scroll-margin-top:110px;}
 
 /* HERO */
 .hero{
-  min-height:100vh;
+  min-height:60vh;
   position:relative;
   display:flex;
   align-items:center;
-  margin-top:90px;
+  padding:30px 0;
 }
 .hero-overlay{
   position:absolute;
@@ -147,9 +147,10 @@ section[id]{scroll-margin-top:110px;}
   );
 }
 .hero-content{
-  position:relative;
+   position:relative;
   color:var(--white);
   max-width:900px;
+  margin-top:10px;
 }
 .hero-kicker{
   letter-spacing:2px;
@@ -162,10 +163,14 @@ section[id]{scroll-margin-top:110px;}
   margin-bottom:12px;
 }
 .hero-content h2{
-  font-size:22px;
+  font-size:30px;
   font-weight:300;
 }
 
+.hero img{
+  object-fit:cover;
+object-position:center top;
+} 
 /* BOTÕES */
 .btn{
   display:inline-block;
@@ -541,10 +546,10 @@ section[id]{scroll-margin-top:110px;}
 
 #sobre.sobre-degrade{
   position: relative;
-  padding: 120px 0 70px;
+  padding: 120px 0 30px;
   background-image: url("../img/sobre.jpg");
-  background-size: cover;
-  background-position: center;
+  background-size: 100% auto;  
+  /* background-position: center 34%;  */
   background-repeat: no-repeat;
 }
 
@@ -576,7 +581,7 @@ section[id]{scroll-margin-top:110px;}
   max-width: 820px;
   text-align: center;
   color: #2b2b2b;
-  margin-top: 45vh; /* empurra o texto para ficar “abaixo” da foto */
+  margin-top: 38vh;
 }
 
 /* ajustes de tipografia */
@@ -592,8 +597,37 @@ section[id]{scroll-margin-top:110px;}
 }
 
 /* lista centralizada */
-#sobre .list-box{ text-align:center; }
-#sobre ul{ list-style-position: inside; }
+.titulo-formacao{
+  text-transform: uppercase;
+}
+
+#sobre .list-box ul{
+  text-align: left;
+  list-style-position: outside;
+  display: inline-block;
+}
+#sobre ul{
+   list-style-position: inside;
+    list-style: none;
+  padding-left: 0;
+   }
+
+   
+   #sobre ul li{
+  position: relative;
+  padding-left: 26px;
+  margin-bottom: 6px;
+}
+
+#sobre ul li::before{
+  content: "✔";
+  position: top;
+  left: 0;
+  top: 0;
+  color: inherit;   /* mesma cor do texto */
+  font-weight: bold;
+}
+   
 
 /* mobile: menos altura da foto, texto sobe um pouco */
 @media (max-width: 768px){
@@ -602,7 +636,7 @@ section[id]{scroll-margin-top:110px;}
   width: 100%;
   padding: 120px 0 70px;
   background-size: cover;
-  background-position: center;
+  background-position: center top;;
 }
 
   #sobre .sobre-texto{
@@ -630,4 +664,24 @@ section[id]{scroll-margin-top:110px;}
 /* opcional: remover fundo escuro interno se existir */
 .markup-section .carousel-track {
   background: transparent;
+}
+
+.list{
+  list-style: none;
+  padding-left: 0;
+}
+
+.list li{
+  position: relative;
+  padding-left: 26px;
+  margin-bottom: 6px;
+}
+
+.list li::before{
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: bold;
+  color: inherit; /* mesma cor do texto */
 }
