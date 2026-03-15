@@ -57,3 +57,5 @@ function initCarousel(root) {
 }
 
 document.querySelectorAll(".carousel").forEach(initCarousel);
+
+
