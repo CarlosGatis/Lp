@@ -597,13 +597,12 @@ iframe{
 }
 
 @media (max-width:768px){
-
   #sobre.sobre-degrade{
-    padding: 420px 20px 40px;
-    background-size: cover;
+    padding: 200px 0 100px;
+    background-size: 280% auto;  
     background-position: center top;
+    
   }
-
 }
 
 /* degradê por cima da imagem */
@@ -683,16 +682,16 @@ iframe{
    
 
 /* mobile: menos altura da foto, texto sobe um pouco */
-@media (max-width: 768px){
+/* @media (max-width: 768px){
   #sobre.sobre-degrade{
   position: relative;
   width: 100%;
   padding: 120px 0 70px;
   background-size: cover;
   background-position: center top;;
-}
+} */
 
-  #sobre .sobre-texto{
+  /* #sobre .sobre-texto{
     margin-top: 60vh;
     max-width: 95%;
     text-shadow: 0 2px 8px rgba(0,0,0,.35);
@@ -700,8 +699,8 @@ iframe{
 
   #sobre .sobre-texto h2{
     font-size: 40px;
-  }
-}
+  } */
+/* } */
 
 .markup-section .carousel-item {
   background: #ffffff;   /* fundo branco */
@@ -814,6 +813,13 @@ iframe{
   font-size:40px;
   color:white;
   cursor:pointer;
+}
+
+#modalImg {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
 @media (min-width:900px){
