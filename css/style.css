@@ -513,35 +513,31 @@ iframe{
    ÍCONES NOS CARDS (PRÁTICA)
    ========================= */
 
-/* Deixa os cards mais alinhados com ícone em cima */
 #pratica .card{
   text-align: center;
   padding: 26px 22px;
 }
 
-/* Ícone */
 #pratica .card-icon{
   width: 100px;
   height: 90px;
-  display: block;
   margin: 0 auto 2px;
   object-fit: contain;
   transition:.25s ease;
-  /* se o ícone for escuro, ele vira branco automaticamente */
   filter: brightness(0) invert(1);
   opacity: .92;
 }
 .card:hover .card-icon{
   transform:scale(1.05);
 }
-/* Título do card */
+
 #pratica .card h3{
   font-size: 18px;
   font-weight: 800;
   margin: 6px 0 10px;
 }
 
-/* Texto do card */
+
 #pratica .card p{
   font-size: 15px;
   line-height: 1.65;
