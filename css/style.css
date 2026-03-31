@@ -513,9 +513,10 @@ iframe{
    ÍCONES NOS CARDS (PRÁTICA)
    ========================= */
 
+
 #pratica .card{
   text-align: center;
-  padding: 26px 22px;
+  padding: 10px 22px;
 }
 
 #pratica .card-icon{
@@ -527,9 +528,6 @@ iframe{
   filter: brightness(0) invert(1);
   opacity: .92;
 }
-.card:hover .card-icon{
-  transform:scale(1.05);
-}
 
 #pratica .card h3{
   font-size: 18px;
@@ -537,7 +535,7 @@ iframe{
   margin: 6px 0 10px;
 }
 
-
+/* Texto do card */
 #pratica .card p{
   font-size: 15px;
   line-height: 1.65;
@@ -594,10 +592,10 @@ iframe{
 
 @media (max-width:768px){
   #sobre.sobre-degrade{
-    padding: 200px 0 100px;
-    background-size: 280% auto;  
+    padding: 200px 0 200px;
+    background-size: 390% auto;  
     background-position: center top;
-    
+       background-image: url("../img/sobre2.jpg");
   }
 }
 
@@ -631,8 +629,6 @@ iframe{
   color: #2b2b2b;
   margin-top: 38vh;
 }
-
-/* ajustes de tipografia */
 #sobre .sobre-texto h2{
   font-size: 34px;
   margin-bottom: 12px;
@@ -643,6 +639,39 @@ iframe{
   line-height: 1.7;
   margin-bottom: 10px;
 }
+
+@media (max-width:768px){
+#sobre .sobre-texto{
+  width: 100%;
+  max-width: 820px;
+  text-align: center;
+  color: #2b2b2b;
+  margin-top: 20vh;
+}
+#sobre .sobre-texto h3{
+  text-overflow: end;
+  font-size: 34px;
+  margin-bottom: 350px;
+}
+
+#sobre .sobre-texto h2{
+  text-overflow: end;
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+#sobre .sobre-texto p{
+  text-overflow: end;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+}
+
+/* ajustes de tipografia */
+
+
+
 
 /* lista centralizada */
 .titulo-formacao{
